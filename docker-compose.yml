@@ -16,7 +16,7 @@ services:
         networks:
             - laravel_network
         ports:
-            - "3306:3306"
+            - "3307:3307"
 
     laravel_php:
         container_name: laravel_php
@@ -29,7 +29,6 @@ services:
         depends_on:
             - laravel_mysql
         volumes:
-            - $SSH_AUTH_SOCK:$SSH_AUTH_SOCK
             - .:/var/www/application
             - ./docker/container/php-fpm/pool/www.conf:/usr/local/etc/php-fpm.d/www.conf
         environment:

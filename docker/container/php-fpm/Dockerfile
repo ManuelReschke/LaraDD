@@ -1,4 +1,4 @@
-FROM php:7.4-fpm
+FROM php:8.0-fpm
 
 # Set env specific configs
 ENV DEBIAN_FRONTEND noninteractive
@@ -56,7 +56,7 @@ RUN cd /usr/local/ \
     && docker-php-ext-enable tideways_xhprof
 
 # Install Redis extension
-RUN pecl install redis-5.2.0 && docker-php-ext-enable redis
+RUN pecl install redis-5.3.7 && docker-php-ext-enable redis
 
 # Composer
 RUN php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');" \
