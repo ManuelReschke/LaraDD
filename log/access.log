@@ -1,3 +1,0 @@
-172.18.0.1 - - [02/Sep/2022:16:00:17 +0000] "GET / HTTP/1.1" 200 17616 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.0.0 Safari/537.36"
-172.18.0.1 - - [02/Sep/2022:16:00:24 +0000] "GET / HTTP/1.1" 200 17617 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.0.0 Safari/537.36"
-172.18.0.1 - - [02/Sep/2022:16:00:25 +0000] "GET / HTTP/1.1" 200 17616 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.0.0 Safari/537.36"

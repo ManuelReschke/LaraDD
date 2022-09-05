@@ -1,0 +1,7 @@
+version: '3.7'
+
+services:
+  laravel_php:
+    user: "${USERID}:${GROUPID}"
+
+

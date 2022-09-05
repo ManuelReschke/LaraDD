@@ -14,7 +14,7 @@ sudo chmod -R 777 log
 #sudo chmod -R 777 log laravel/storage laravel/node_modules laravel/public
 
 # start container
-sudo docker-compose up -d
+docker-compose up -d
 
 # prevent mysql connection problem
 sleep 4
@@ -27,7 +27,7 @@ docker-compose exec laravel_php composer install
 docker-compose exec laravel_php ./vendor/bin/laravel new laravel -f
 
 # fix permissions
-sudo chmod -R 777 laravel
+sudo chown -R $USERID:$GROUPID laravel
 
 # create db
 #bash docker/bin/artisan.sh migrate
