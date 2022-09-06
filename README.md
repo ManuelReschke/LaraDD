@@ -1,9 +1,10 @@
 # LaraDD
 Laravel Dockerized Development - ready to use laravel developer environment
 
+![alt text](LaraDD-Logo.jpg "LaraDD Logo")
+
 This "magic" package includes
 * laravel v9
-    * incl auth
 * php 8.0
 * nginx:stable
 * mysql:8
@@ -13,7 +14,19 @@ This "magic" package includes
 
 # Run
     make install
-Done! Go to your laravel installation: http://localhost:8888/
+Done! Go to your laravel installation: 
+HTTP: http://localhost:8888/
+HTTPS: https://localhost:8889/
+
+
+## Run artisan commands
+    make artisan <command>
+    
+## Stop container
+    make down
+
+## Start existing container
+    make up
     
 ## Start Watcher (CSS & JS)
     make watch

@@ -20,6 +20,8 @@ remove:
 	./docker/bin/remove.sh
 connect:
 	./docker/bin/connect.sh
+attach:
+	./docker/bin/attach.sh
 install:
 	./docker/bin/setup.sh
 update:

@@ -1,10 +1,10 @@
-#!/usr/bin/env bash
+#!/bin/bash
 ########################################################################################################################
-### artisan
+### connect
 ########################################################################################################################
 
 # include config
 DIR=`dirname $(readlink -f $0)`
 source "$DIR/config.sh"
 cd `dirname $DIR`
-sudo docker exec -itu $(id -u) "${DOCKER_PREFIX}php" bash -c 'cd laravel ; npm run dev ; npm run watch'
+sudo docker exec -itu $(id -u) "${DOCKER_PREFIX}php" bash
